@@ -3,22 +3,135 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="keywords" content="footer, address, phone, icons" />
   <title>{% block title %}{% endblock %}</title>
-  <link href="{% static "css/main.css" %}" rel="stylesheet">
-  <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
+  <!-- CSS For The Modern Business Template -->
+  <link href="{% static "css/creative.min.css" %}" rel="stylesheet">
+  <!-- Bootstrap core CSS-->
+  <link href="{% static "vendor/bootstrap/css/bootstrap.min.css" %}" rel="stylesheet">
+  <!-- Custom fonts for this template-->
+  <link href="{% static "vendor/font-awesome/css/font-awesome.min.css" %}" rel="stylesheet">
+
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet'>
+  <!-- Plugin CSS -->
+  <link href="{% static "vendor/magnific-popup/magnific-popup.css" %}" rel="stylesheet">
+  <!-- Footer CSS -->
+  <link href="{% static "css/footer-distributed-with-address-and-phones.css" %}" rel="stylesheet">
 </head>
 
-<body>
+<body id="page-top">
 
-  <div class="container">
-    <div class="wrapper">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"><img style="margin:0; padding:0; width:101px; height:61px" src="{% static "img/logo_transparent.png" %}" /></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
         {% block content %}
 
         {% endblock %}
 
-    </div>
-  </div>
+        <footer class="footer-distributed">
+
+    			<div class="footer-left">
+
+    				<img style="margin:0; padding:0; width:200px; height:110px" src="{% static "img/logo_transparent.png" %}" />
+
+    				<p class="footer-links">
+    					<a class=" js-scroll-trigger" href="#about">About Us</a>
+    					·
+    					<a class=" js-scroll-trigger" href="#services">Services</a>
+    					·
+    					<a class=" js-scroll-trigger" href="#portfolio">Portfolio</a>
+    					·
+    					<a class=" js-scroll-trigger" href="#contact">Contact</a>
+    				</p>
+    			</div>
+
+    			<div class="footer-center">
+
+    				<div>
+    					<i class="fa fa-map-marker"></i>
+    					<p><span>Haramous, US Embassy Street,</span> Djibouti city, Republic of Djibouti.</p>
+    				</div>
+
+    				<div>
+    					<i class="fa fa-phone"></i>
+    					<p>+253 21 349999</p>
+    				</div>
+
+    				<div>
+    					<i class="fa fa-envelope"></i>
+    					<p><a href="mailto:info@to7network.com">info@to7network.com</a></p>
+    				</div>
+
+    			</div>
+
+    			<div class="footer-right">
+
+    				<p class="footer-company-about">
+    					<span>About Us</span>
+              TO7NETWORK is a subsidiary company which operates as a separate and distinct corporation
+                from its parent company Djibouti Telecom.
+    				</p>
+
+    				<div class="footer-icons">
+
+    					<a href="#"><i class="fa fa-facebook"></i></a>
+    					<a href="#"><i class="fa fa-twitter"></i></a>
+    					<a href="#"><i class="fa fa-linkedin"></i></a>
+    					<a href="#"><i class="fa fa-github"></i></a>
+
+    				</div>
+
+    			</div>
+
+    		</footer>
+
+        <footer class="py-5 bg-dark">
+            <div class="container">
+              <p class="m-0 text-center text-white">&copy; 2018 Copyright | TO7NETWORK | All Rights Reserved</p>
+            </div>
+            <!-- /.container -->
+        </footer>
+
+  <!-- Bootstrap core JavaScript -->
+    <script src="{% static "vendor/jquery/jquery.min.js" %}"></script>
+    <script src="{% static "vendor/bootstrap/js/bootstrap.bundle.min.js" %}"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="{% static "vendor/jquery-easing/jquery.easing.min.js" %}"></script>
+    <script src="{% static "vendor/scrollreveal/scrollreveal.min.js" %}"></script>
+    <script src="{% static "vendor/magnific-popup/jquery.magnific-popup.min.js" %}"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="{% static "js/creative.min.js" %}"></script>
+
 </body>
 
 </html>
